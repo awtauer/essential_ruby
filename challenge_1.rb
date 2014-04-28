@@ -18,9 +18,10 @@ def pmt(rate, nper, pv)
  number_of_payments = nper.to_f
  principal_amount =pv.to_f
 
-  return (rate_as_percentage*nper)/(1-(1+rate_as_percentage)**(-1*nper))
+  return (rate_as_percentage*number_of_payments)/(1-(1+rate_as_percentage)**(-1*number_of_payments))
 end
-puts "Your monthly payment will be #{pmt(12, 10, 200000)}."
+
+#puts "Your monthly payment will be #{pmt(12, 10, 200000)}."
 
 
 
